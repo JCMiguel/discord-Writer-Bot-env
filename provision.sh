@@ -13,6 +13,9 @@ mysql -e "FLUSH PRIVILEGES;"
 # Install app requirements.
 pip3 install -r /app/requirements.txt
 
+# Move settings.json template into /app directory, as we can't COPY it in the Dockerfile or it gets overwritten by the volume.
+mv /provision/templates/settings.json /app/settings.json
+
 # Start the bot.
 cd /app
 echo "Starting Writer-Bot"

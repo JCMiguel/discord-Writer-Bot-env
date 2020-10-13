@@ -13,9 +13,7 @@ RUN apt-get -y install mariadb-server-10.3
 # Make a directory to put the app code in (to be loaded in the docker-compose file)
 RUN mkdir /app
 
-# Copy across the settings template.
-COPY templates/settings.json /app/settings.json
-
-# Copy the provision script across so we can run it at the end of docker-compose up.
+# Copy the provision script and templates across to the container.
 RUN mkdir /provision
+COPY templates/ /provision/templates/
 COPY provision.sh /provision/init.sh
