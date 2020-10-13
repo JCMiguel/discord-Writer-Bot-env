@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # This script is run as the final command on creation of the container, to setup everything we need to run the bot.
-
 # Start MariaDB service.
 service mysql start
 
