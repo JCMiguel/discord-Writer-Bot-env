@@ -1,0 +1,11 @@
+{
+    "token": "YOUR-TOKEN-HERE",
+    "prefix": "?",
+    "version": "",
+    "src": "",
+    "patch_notes": "",
+    "db_host": "localhost",
+    "db_user": "dbuser",
+    "db_pass": "password",
+    "db_name": "bot"
+}
