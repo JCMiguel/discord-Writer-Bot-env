@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+    app:
+        container_name: writer-bot
+        build: .
+        image: writer-bot:dev
+        ports:
+          - 8080:8000
+        volumes:
+          - ./app/:/app
+        stdin_open: true
+        tty: true
+        command: /bin/bash /provision/init.sh
