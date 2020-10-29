@@ -4,8 +4,12 @@
     "version": "",
     "src": "",
     "patch_notes": "",
+    "help_server": "",
+    "invite_url": "",
+    "avatar": "https://i.imgur.com/9YaZkfe.png",
     "db_host": "localhost",
     "db_user": "dbuser",
     "db_pass": "password",
-    "db_name": "bot"
+    "db_name": "bot",
+    "env": "dev"
 }

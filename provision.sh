@@ -14,6 +14,7 @@ mysql -e "FLUSH PRIVILEGES;"
 pip3 install -r /app/requirements.txt
 
 # Move settings.json template into /app directory, as we can't COPY it in the Dockerfile or it gets overwritten by the volume.
+# We do it this way, because the database name, user, etc... is defined in the template so you don't have to make your own changes.
 mv /provision/templates/settings.json /app/settings.json
 
 # Start the bot.
