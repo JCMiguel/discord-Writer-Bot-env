@@ -1,4 +1,4 @@
 [submodule "app"]
 	path = app
-	url = https://github.com/cwarwicker/discord-Writer-Bot
-	branch = master
+	url = https://github.com/JCMiguel/discord-Writer-Bot.git
+	branch = reassureTest
